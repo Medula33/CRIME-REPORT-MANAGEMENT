@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime Report Management System</title>
+</head>
+<body>
+    <h1>Crime Report Management System</h1>
+    <ul>
+        <li><a href="{{ url_for('report_crime') }}">Report a Crime</a></li>
+        <li><a href="{{ url_for('view_crime_reports') }}">View Crime Reports</a></li>
+        <li><a href="{{ url_for('delete_crime') }}">Delete a Crime Report</a></li>
+        <li><a href="{{ url_for('view_summary_by_location') }}">View Summary of Crimes by Location</a></li>
+    </ul>
+</body>
+</html>

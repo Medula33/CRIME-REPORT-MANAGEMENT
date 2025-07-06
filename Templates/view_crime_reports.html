@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Crime Reports</title>
+</head>
+<body>
+    <h1>View Crime Reports</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Location</th>
+            <th>Crime Type</th>
+            <th>Description</th>
+            <th>Notes</th>
+            <th>Time</th>
+        </tr>
+        {% for report in reports %}
+        <tr>
+            <td>{{ report.id }}</td>
+            <td>{{ report.location }}</td>
+            <td>{{ report.crime_type }}</td>
+            <td>{{ report.description }}</td>
+            <td>{{ report.notes }}</td>
+            <td>{{ report.time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+

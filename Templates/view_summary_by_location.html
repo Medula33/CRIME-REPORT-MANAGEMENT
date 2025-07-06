@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summary of Crimes by Location</title>
+</head>
+<body>
+    <h1>Summary of Crimes by Location</h1>
+    <table border="1">
+        <tr>
+            <th>Location</th>
+            <th>Number of Crimes</th>
+        </tr>
+        {% for record in summary %}
+        <tr>
+            <td>{{ record.location }}</td>
+            <td>{{ record.count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

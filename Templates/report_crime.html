@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report a Crime</title>
+</head>
+<body>
+    <h1>Report a Crime</h1>
+    <form action="{{ url_for('report_crime') }}" method="POST">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+        <label for="crime_type">Crime Type:</label>
+        <input type="text" id="crime_type" name="crime_type" required><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br>
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes"></textarea><br>
+        <input type="submit" value="Report Crime">
+    </form>
+</body>
+</html>
